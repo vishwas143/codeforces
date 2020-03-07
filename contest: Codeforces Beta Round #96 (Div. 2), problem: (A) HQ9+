@@ -1,0 +1,45 @@
+#include<bits/stdc++.h>
+#define ll long long int 
+#define pb push_back
+#define mk make_pair
+#define vb v.begin()
+#define ve v.end()
+#define vllp vector<pair< ll,ll > >
+#define vll vector<ll>
+#define mp map<ll,ll>
+#define itr map<ll,ll>::iterator
+#define fast ios_base::sync_with_stdio(false);
+ 
+using namespace std;
+int main()
+{
+	fast;
+	string p;
+	cin>>p;
+	int a=p.length();
+	int cnt=0;
+	for(int i=0;i<a;i++)
+	{
+		if(p[i]=='H')
+		{
+			cnt++;
+		}
+		if(p[i]=='Q')
+		{
+			cnt++;
+		}
+		if(p[i]=='9')
+		{
+			cnt++;
+		}
+		
+	}
+	if(cnt>=1)
+	{
+		cout<<"YES";
+	}
+	else
+	{
+		cout<<"NO";
+	}
+}
